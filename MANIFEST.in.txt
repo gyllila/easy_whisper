@@ -1,0 +1,3 @@
+include README.rst
+include easy_whisper/usr_par.json
+include easy_whisper/sys_par.json
