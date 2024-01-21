@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "easy_whisper"
+version = "1.0.0"
+authors = [
+  { name="Yanling Guo", email="guoyanling_2000@yahoo.de" },
+]
+description = "An easy to use adaption of OpenAI's Whisper, with both CLI and (tkinter) GUI, faster processing of long audio files even on CPU, txt output with timestamps."
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["audio", "transcribe", "translate", "STT", "easy", "fast", "CPU", "CUDA"]
+dependencies = [
+    "pydub",
+    "openai-whisper",
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/gyllila/easy_whisper"
+
+[project.scripts]
+easy_whisper = "easy_whisper.__main__:main"
