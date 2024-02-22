@@ -5,8 +5,8 @@ def readme():
         return f.read()
 
 setup(name='easy_whisper',
-      version='1.0.0',
-      description="An easy to use adaption of OpenAI's Whisper, with both CLI and (tkinter) GUI, faster processing of long audio files even on CPU, txt output with timestamps.",
+      version='1.1.0',
+      description="An easy to use adaption of OpenAI's Whisper, with both CLI and (tkinter) GUI, faster processing even on CPU, txt output with timestamps.",
       long_description=readme(),
       classifiers=[
         'Development Status :: 3 - Alpha',
@@ -21,7 +21,7 @@ setup(name='easy_whisper',
       license='GPL',
       packages=['easy_whisper'],
       install_requires=[
-          'pydub',
+          'openai',
           'openai-whisper'
       ],
       entry_points={
